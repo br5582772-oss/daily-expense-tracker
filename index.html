@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body
+    <div class="container">
+
+        <h1> Daily Expense Tracker</h1>
+
+        <div class="expense-form">
+            <input type="text id="UserName" placeholder="User Name">
+
+            <input type="text" id="expenseName" placeholder="Expense Name">
+
+            <input type="number" id="amount" placeholder="Amount">
+
+            <select id="category">
+                <option value="">Select Category</option>
+                <option value="Food">Food</option>
+                <option value="Travel">Travel</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Education">Education</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <input type="date" id="date">
+
+            <button onclick="addExpense()">Add Expense</button>
+
+        </div>
+
+        <h2>Total Expenses: ₹<span id="total">0</span></h2>
+<button onclick="clearAllExpenses()">Clear All</button>
+
+<div id="expenseList"></div>
+<Canvas id="expenseChart" width="400" height="400"></Canvas>
+   <div id="budget-section"></div> 
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
